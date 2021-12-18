@@ -1,19 +1,15 @@
-import { useState } from 'react'
-import logo from './logo.svg'
+import { ReactComponent as Logo } from './logo.svg';
 import './App.css'
+import { CountButton } from '@/components/CountButton';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <Logo />
         <p>Hello Vite + React!</p>
         <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
+          <CountButton />
         </p>
         <p>
           Edit <code>App.tsx</code> and save to test HMR updates.
