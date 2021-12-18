@@ -1,5 +1,5 @@
 import { ReactComponent as Logo } from './logo.svg';
-import './App.css'
+import './App.css';
 import { CountButton } from '@/components/CountButton';
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
         </p>
       </header>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
