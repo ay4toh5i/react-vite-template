@@ -1,11 +1,19 @@
 import { ReactComponent as Logo } from './logo.svg';
 import './App.css';
 import { CountButton } from '@/components/CountButton';
+import { styled } from '@linaria/react';
+
+const Title = styled.div<{ primary?: boolean }>`
+  font-weight: bold;
+  color: ${props => (props.primary ? 'orange' : 'lightblue')};
+`;
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Title primary>hello linaria!</Title>
+        <Title>hello linaria!</Title>
         <Logo />
         <p>Hello Vite + React!</p>
         <p>
