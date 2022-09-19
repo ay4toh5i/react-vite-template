@@ -15,7 +15,7 @@ export default defineConfig(({ mode }) => ({
       sourceMap: mode !== 'production',
     }),
     css({
-      output: 'styles.css',
+      output: 'styles-[contenthash].css',
     }),
   ],
 }));
